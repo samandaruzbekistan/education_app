@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:forlesson/main.dart';
+import 'package:forlesson/screens/home_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -41,9 +43,9 @@ class WelcomeScreen extends StatelessWidget {
                     topLeft: Radius.circular(70)
                   )
                 ),
-                child: const Column(
+                child: Column(
                   children: [
-                    Text(
+                    const Text(
                       "Tarbiya fani darsligi",
                       style: TextStyle(
                         fontSize: 25,
@@ -53,7 +55,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 15,),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 40),
                       child: Text(
                           "Ushbu ilovada tarbiya faniga oid bo'lgan elektron materiallani topishingiz mumkin",
@@ -61,6 +63,30 @@ class WelcomeScreen extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 17,
                           color: Colors.black,
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 60.0,),
+                    Material(
+                      color: Color(0xFF674AEF),
+                      borderRadius: BorderRadius.circular(10),
+                      child: InkWell(
+                        onTap: (){
+                          Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (context) => HomePage())
+                          );
+                        },
+                        child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 80),
+                          child: const Text(
+                            "Boshlash",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1
+                            ),
+                          ),
                         ),
                       ),
                     ),
