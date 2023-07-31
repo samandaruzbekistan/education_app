@@ -41,7 +41,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 3 ,bottom: 15),
                   child: Text(
-                    "Assalomu aleykum",
+                    "Assalomu aleykum!",
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
                       fontSize: 25,
@@ -142,9 +142,168 @@ class HomePage extends StatelessWidget {
                     );
                   },
                 ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Kurslar",
+                      style: TextStyle(
+                        fontSize: 23,
+                        fontWeight: FontWeight.w600
+                      ),
+                    ),
+                    Text(
+                      "Barchasi",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xFF674AEF),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    InkWell(
+                      onTap: (){},
+                      child: Container(
+                        width: (MediaQuery.of(context).size.width / 2.3),
+                        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xFFF5F3FF)
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset("assets/images/1.jpg"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: (){},
+                      child: Container(
+                        width: (MediaQuery.of(context).size.width / 2.3),
+                        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xFFF5F3FF)
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset("assets/images/2.jpg"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    InkWell(
+                      onTap: (){},
+                      child: Container(
+                        width: (MediaQuery.of(context).size.width / 2.3),
+                        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xFFF5F3FF)
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset("assets/images/1.jpg"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    InkWell(
+                      onTap: (){},
+                      child: Container(
+                        width: (MediaQuery.of(context).size.width / 2.3),
+                        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: Color(0xFFF5F3FF)
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(10),
+                              child: Image.asset("assets/images/2.jpg"),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                // GridView.builder(
+                //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                //     crossAxisCount: 2,
+                //     childAspectRatio: (MediaQuery.of(context).size.height - 50 - 25) / (4 * 240),
+                //     mainAxisExtent: 10,
+                //     crossAxisSpacing: 10,
+                //   ),
+                //   shrinkWrap: true,
+                //   physics: NeverScrollableScrollPhysics(),
+                //   itemCount: 4,
+                //   itemBuilder: (context, index){
+                //     List<String> level = ["1-sinf","2-sinf","3-sinf","4-sinf"];
+                //     return InkWell(
+                //       onTap: (){},
+                //       child: Container(
+                //         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                //         decoration: BoxDecoration(
+                //           borderRadius: BorderRadius.circular(20),
+                //           color: Color(0xFFF5F3FF)
+                //         ),
+                //         child: Column(
+                //           children: [
+                //             Padding(
+                //               padding: EdgeInsets.all(10),
+                //               child: Text(
+                //                 level[index],
+                //                 style: TextStyle(
+                //                     color: Colors.black,
+                //                   fontSize: 20
+                //                 ),
+                //               ),
+                //             ),
+                //           ],
+                //         ),
+                //       ),
+                //     );
+                //   },
+                // ),
               ],
             ),
           ),
+        ],
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showUnselectedLabels: true,
+        iconSize: 32,
+        selectedItemColor: Color(0xFF674AEF),
+        selectedFontSize: 18,
+        unselectedItemColor: Colors.grey,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.school), label: "Ustozlar"),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
+          BottomNavigationBarItem(icon: Icon(Icons.developer_board), label: "Dasturchi"),
         ],
       ),
     );
