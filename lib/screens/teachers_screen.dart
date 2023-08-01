@@ -56,7 +56,7 @@ class TeachersPage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => HomePage()),
               );
               break;
-            case 3:
+            case 2:
             // Navigate to HomeScreen
               Navigator.push(
                 context,
@@ -71,7 +71,7 @@ class TeachersPage extends StatelessWidget {
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: "Ustozlar"),
-          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
+          // BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
           BottomNavigationBarItem(icon: Icon(Icons.developer_board), label: "Dasturchi"),
         ],
       ),

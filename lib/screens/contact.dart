@@ -3,8 +3,8 @@ import 'package:forlesson/screens/home_screen.dart';
 import 'package:forlesson/screens/teachers_screen.dart';
 
 
-class Developer extends StatelessWidget {
-  const Developer({Key? key}) : super(key: key);
+class Contact extends StatelessWidget {
+  const Contact({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -15,21 +15,6 @@ class Developer extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            CircleAvatar(
-              backgroundImage: AssetImage("assets/images/avatar.jpg"),
-              radius: 60.0,
-            ),
-            Text(
-              'Samandar Sariboyev',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: 'Pacifico',
-                  fontSize: 30.0),
-            ),
-            Text(
-              'Web and Mobile developer',
-              style: TextStyle(color: Colors.black.withOpacity(0.6), fontSize: 18.0),
-            ),
             SizedBox(height: 20.0, width: 160.0, child: Divider(color: Colors.teal[100],),),
             Card(
               color: Color(0xFFF5F3FF),
@@ -91,7 +76,7 @@ class Developer extends StatelessWidget {
         iconSize: 25,
         selectedItemColor: Color(0xFF674AEF),
         selectedFontSize: 18,
-        currentIndex: 2,
+        currentIndex: 3,
         unselectedItemColor: Colors.grey,
         onTap: (index) {
           // Handle navigation based on the tapped index
@@ -118,7 +103,7 @@ class Developer extends StatelessWidget {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: "Ustozlar"),
-          // BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
           BottomNavigationBarItem(icon: Icon(Icons.developer_board), label: "Dasturchi"),
         ],
       ),

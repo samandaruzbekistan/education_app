@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:forlesson/First%20classes/2.dart';
+import 'package:forlesson/First%20classes/3.dart';
 
 import '../First classes/1.dart';
 
-class OneLessons extends StatelessWidget {
-  const OneLessons({Key? key}) : super(key: key);
+class ThreeLessons extends StatelessWidget {
+  const ThreeLessons({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,31 +16,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One1()),
-              );
-            },
-            leading: Container(
-              padding: const EdgeInsets.all(5),
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Color(0xFF674AEF)
-              ),
-              child: const Icon(
-                Icons.play_arrow_rounded,
-                color: Colors.white,
-                size: 30,
-              ),
-            ),
-            title: const Text("Vatan madhi"),
-            subtitle: const Text("1-dars"),
-          ),
-
-
-          ListTile(
-            onTap: (){
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => One2()),
+                MaterialPageRoute(builder: (context) => Three1()),
               );
             },
             leading: Container(
@@ -53,7 +31,31 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("O'zbekiston ko'p millatli davlat"),
+            title: const Text("Munosib farzand"),
+            subtitle: const Text("1-dars"),
+          ),
+
+
+          ListTile(
+            onTap: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Three2()),
+              );
+            },
+            leading: Container(
+              padding: const EdgeInsets.all(5),
+              decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color(0xFF674AEF)
+              ),
+              child: const Icon(
+                Icons.play_arrow_rounded,
+                color: Colors.white,
+                size: 30,
+              ),
+            ),
+            title: const Text("Muvaffaqiyat -qat`iyat va mehnat natijasi"),
             subtitle: const Text("2-dars"),
           ),
 
@@ -65,7 +67,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One3()),
+                MaterialPageRoute(builder: (context) => Three3()),
               );
             },
             leading: Container(
@@ -80,7 +82,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Mard va jasur inson-Vatanning tayanchi"),
+            title: const Text("Serquyosh hur o`lkam"),
             subtitle: const Text("3-dars"),
           ),
 
@@ -91,7 +93,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One4()),
+                MaterialPageRoute(builder: (context) => Three4()),
               );
             },
             leading: Container(
@@ -106,7 +108,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Bobolarimizning bebaho merosi"),
+            title: const Text("Eng buyuk Sharaf."),
             subtitle: const Text("4-dars"),
           ),
 
@@ -120,7 +122,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One5()),
+                MaterialPageRoute(builder: (context) => Three5()),
               );
             },
             leading: Container(
@@ -135,7 +137,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Maktab-eng ulug’ dargoh"),
+            title: const Text("Bilim olish odobi"),
             subtitle: const Text("5-dars"),
           ),
 
@@ -146,7 +148,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One6()),
+                MaterialPageRoute(builder: (context) => Three6()),
               );
             },
             leading: Container(
@@ -161,7 +163,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Kitob-buyuk donishmand"),
+            title: const Text("Kim bo`lsam ekan"),
             subtitle: const Text("6-dars"),
           ),
 
@@ -171,7 +173,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One7()),
+                MaterialPageRoute(builder: (context) => Three7()),
               );
             },
             leading: Container(
@@ -186,7 +188,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Bilim-tengsiz xazina"),
+            title: const Text("Vaqting ketdi-naqting ketdi."),
             subtitle: const Text("7-dars"),
           ),
 
@@ -196,7 +198,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One8()),
+                MaterialPageRoute(builder: (context) => Three8()),
               );
             },
             leading: Container(
@@ -211,7 +213,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Vatan bayrog’ini baland tutaylik."),
+            title: const Text("Ehtiyotkorlik"),
             subtitle: const Text("8-dars"),
           ),
 
@@ -220,7 +222,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One9()),
+                MaterialPageRoute(builder: (context) => Three9()),
               );
             },
             leading: Container(
@@ -235,7 +237,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Yaxshilik qilish hikmati"),
+            title: const Text("Kitob -bilim manbai"),
             subtitle: const Text("9-dars"),
           ),
 
@@ -244,7 +246,7 @@ class OneLessons extends StatelessWidget {
             onTap: (){
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => One10()),
+                MaterialPageRoute(builder: (context) => Three10()),
               );
             },
             leading: Container(
@@ -259,7 +261,7 @@ class OneLessons extends StatelessWidget {
                 size: 30,
               ),
             ),
-            title: const Text("Imkoniyat va matonat"),
+            title: const Text("Elektron axborot nomalari"),
             subtitle: const Text("10-dars"),
           ),
 

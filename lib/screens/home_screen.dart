@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:forlesson/screens/contact.dart';
 import 'package:forlesson/screens/course_screen.dart';
+import 'package:forlesson/screens/course_screen2.dart';
+import 'package:forlesson/screens/course_screen3.dart';
+import 'package:forlesson/screens/course_screen4.dart';
 import 'package:forlesson/screens/developer.dart';
 import 'package:forlesson/screens/teachers_screen.dart';
 
@@ -197,7 +201,12 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => TwoClass()),
+                        );
+                      },
                       child: Container(
                         width: (MediaQuery.of(context).size.width / 2.3),
                         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
@@ -222,7 +231,12 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ThreeClass()),
+                        );
+                      },
                       child: Container(
                         width: (MediaQuery.of(context).size.width / 2.3),
                         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
@@ -241,7 +255,12 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => FourClass()),
+                        );
+                      },
                       child: Container(
                         width: (MediaQuery.of(context).size.width / 2.3),
                         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
@@ -284,7 +303,7 @@ class HomePage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => TeachersPage()),
               );
               break;
-            case 3:
+            case 2:
             // Navigate to HomeScreen
               Navigator.push(
                 context,
@@ -299,7 +318,7 @@ class HomePage extends StatelessWidget {
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: "Ustozlar"),
-          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
+          // BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Bog'lanish"),
           BottomNavigationBarItem(icon: Icon(Icons.developer_board), label: "Dasturchi"),
         ],
       ),
