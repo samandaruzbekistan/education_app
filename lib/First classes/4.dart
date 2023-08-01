@@ -281,7 +281,7 @@ Harflarni to’g’ri joylashtirib mavzuga oid so’zlar  topamiz
 """),
               // Use FadeInImage to display a loading indicator while the image is loading from the network
               SizedBox(height: 10,),
-              Image.asset("assets/images/three8.png"),
+              Image.asset("assets/images/four8.png"),
             ],
           ),
         ),
@@ -296,43 +296,23 @@ class Four9 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Kitob -bilim manbai"), backgroundColor: Color(0xFF674AEF),),
+      appBar: AppBar(title: Text("Oilaviy kitobxonlik-muvaffaqiyat poydevori"), backgroundColor: Color(0xFF674AEF),),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
           child: Column(
             children: [
-              Text("""                                Test:
-
-1. Hikoyadagi voqealari  dars vaqtida bo`lgan?
-
-A) Atrofimizdagi olam
-
-B) Obodnoma
-
-C) Musiqa
-
- 
-
- 
-
-2. Aziza va Fazilat qayerga borishdi?
-
-A) Kutubxona
-
-B) Oromgoh
-
-C) Sayilgoh
+              Text("""                               Test.
+1. Dunyoda inson uchun eng aziz ikki ne’matni ayting?
+A) Non, kitob
+B) Non, suv
+C) Kitob, boylik
 
 
-Krasswordagi bo`sh kataklarni to`ldiring.
-
-Yurtimizdagi eng qadimgi yozma manba
-Toshkentdagi Mo`yi muborakda qaysi muqaddas kitob saqlanadi?
-Dunyodagi eng qadimgi kitob nomi?
-1839-yilda  priss papirusi qayerdan topigan?"""),
+Oila a’zolaringizni sevimli kitoblarini mazmuniga qarab ajrating
+"""),
               SizedBox(height: 10,),
-              Image.asset("assets/images/three9.png"),
+              Image.asset("assets/images/four9.png"),
             ],
           ),
         ),
@@ -347,37 +327,26 @@ class Four10 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Elektron axborot nomalar"), backgroundColor: Color(0xFF674AEF),),
+      appBar: AppBar(title: Text("Ona ulug' zot"), backgroundColor: Color(0xFF674AEF),),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
           child: Column(
             children: [
-              Text("""                                Testdagi to`g`ri variantni belgilang.
+              Text("""                                Test.
+1. Qaysi qalb egasi hamisha kechirimli, mehrga to’la makon hisoblanadi?
+A) Ona
+B) Ota
+C) Bobo-buvi
 
-1.Birinchi kompyuter qachon yaratilgan ?
-
-A) 1943
-
-B) 1946
-
-B) 1944
-
-2. Birinchi  kompyuter qayerda yaratilgan ?
-
-A) AQSH
-
-B) Germaniya
-
-C)  Xitoy
-
-3.Dastlabki kompyuterning og`irligi necha tonna bo`lgan?
-
-A) 22 tonna
-
-B) 23 tonna
-
-C) 27 tonna"""),
+            Tushirib qoldirilgan so’zlarni toping.
+1. Onamga juda yoqqani uchun doim _______________ olar edim.
+2. Ona o’z farzandining bitta kulgusi uchun: ___________  ___________ ________ ishlashga tayyor.
+3. Onaning mehr-muhabbati _____ ___ kabi.
+4. Onalar dunyodagi ___ ______ insonlardir.
+5. Onaning ________ bolada, bolaning ______ dalada.
+6. Onasi undan qimmatbaho sovg’alar emas, uning _____, ______, _______ kutayotganligini tushundi.
+"""),
               // Use FadeInImage to display a loading indicator while the image is loading from the network
               SizedBox(height: 10,),
               // FadeInImage.memoryNetwork(
