@@ -32,11 +32,15 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.dashboard,
-                      size: 30,
-                      color: Colors.white,
+                    Container(
+                      child: Image.asset("assets/images/logo.png"),
+                      width: 30,
                     ),
+                    // Icon(
+                    //   Icons.dashboard,
+                    //   size: 30,
+                    //   color: Colors.white,
+                    // ),
                     Icon(
                       Icons.notifications,
                       size: 30,
