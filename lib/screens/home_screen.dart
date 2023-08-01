@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:forlesson/screens/course_screen.dart';
+import 'package:forlesson/screens/developer.dart';
 import 'package:forlesson/screens/teachers_screen.dart';
 
 class HomePage extends StatelessWidget {
@@ -83,6 +84,8 @@ class HomePage extends StatelessWidget {
             padding: EdgeInsets.only(top: 20, left: 15, right: 15),
             child: Column(
               children: [
+                Text('Bizning ilovamizda'),
+                SizedBox(height: 10,),
                 GridView.builder(
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3,
@@ -144,6 +147,7 @@ class HomePage extends StatelessWidget {
                     );
                   },
                 ),
+                SizedBox(height: 20,),
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -257,6 +261,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+                SizedBox(height: 10,)
               ],
             ),
           ),
@@ -277,6 +282,13 @@ class HomePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => TeachersPage()),
+              );
+              break;
+            case 3:
+            // Navigate to HomeScreen
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Developer()),
               );
               break;
             default:

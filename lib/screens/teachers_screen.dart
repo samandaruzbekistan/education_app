@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forlesson/screens/developer.dart';
 import 'package:forlesson/screens/home_screen.dart';
 
 class TeachersPage extends StatelessWidget {
@@ -53,6 +54,13 @@ class TeachersPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => HomePage()),
+              );
+              break;
+            case 3:
+            // Navigate to HomeScreen
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Developer()),
               );
               break;
             default:
