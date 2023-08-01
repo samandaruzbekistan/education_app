@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forlesson/screens/teachers_screen.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({Key? key}) : super(key: key);
@@ -250,44 +251,6 @@ class HomePage extends StatelessWidget {
                     ),
                   ],
                 ),
-                // GridView.builder(
-                //   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                //     crossAxisCount: 2,
-                //     childAspectRatio: (MediaQuery.of(context).size.height - 50 - 25) / (4 * 240),
-                //     mainAxisExtent: 10,
-                //     crossAxisSpacing: 10,
-                //   ),
-                //   shrinkWrap: true,
-                //   physics: NeverScrollableScrollPhysics(),
-                //   itemCount: 4,
-                //   itemBuilder: (context, index){
-                //     List<String> level = ["1-sinf","2-sinf","3-sinf","4-sinf"];
-                //     return InkWell(
-                //       onTap: (){},
-                //       child: Container(
-                //         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-                //         decoration: BoxDecoration(
-                //           borderRadius: BorderRadius.circular(20),
-                //           color: Color(0xFFF5F3FF)
-                //         ),
-                //         child: Column(
-                //           children: [
-                //             Padding(
-                //               padding: EdgeInsets.all(10),
-                //               child: Text(
-                //                 level[index],
-                //                 style: TextStyle(
-                //                     color: Colors.black,
-                //                   fontSize: 20
-                //                 ),
-                //               ),
-                //             ),
-                //           ],
-                //         ),
-                //       ),
-                //     );
-                //   },
-                // ),
               ],
             ),
           ),
@@ -295,10 +258,26 @@ class HomePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomNavigationBar(
         showUnselectedLabels: true,
-        iconSize: 32,
+        iconSize: 25,
         selectedItemColor: Color(0xFF674AEF),
         selectedFontSize: 18,
+        currentIndex: 0,
         unselectedItemColor: Colors.grey,
+        onTap: (index) {
+          // Handle navigation based on the tapped index
+          switch (index) {
+            case 1:
+            // Navigate to HomeScreen
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TeachersPage()),
+              );
+              break;
+            default:
+            // Do nothing
+              break;
+          }
+        },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
           BottomNavigationBarItem(icon: Icon(Icons.school), label: "Ustozlar"),
