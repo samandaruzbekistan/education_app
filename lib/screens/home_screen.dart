@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:forlesson/screens/course_screen.dart';
 import 'package:forlesson/screens/teachers_screen.dart';
 
 class HomePage extends StatelessWidget {
@@ -168,7 +169,12 @@ class HomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     InkWell(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => OneClass()),
+                        );
+                      },
                       child: Container(
                         width: (MediaQuery.of(context).size.width / 2.3),
                         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
@@ -224,7 +230,7 @@ class HomePage extends StatelessWidget {
                           children: [
                             Padding(
                               padding: EdgeInsets.all(10),
-                              child: Image.asset("assets/images/1.jpg"),
+                              child: Image.asset("assets/images/3.jpg"),
                             ),
                           ],
                         ),
@@ -243,7 +249,7 @@ class HomePage extends StatelessWidget {
                           children: [
                             Padding(
                               padding: EdgeInsets.all(10),
-                              child: Image.asset("assets/images/2.jpg"),
+                              child: Image.asset("assets/images/4.jpg"),
                             ),
                           ],
                         ),
